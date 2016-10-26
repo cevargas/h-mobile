@@ -1,0 +1,76 @@
+<envioManifesto>
+	<numero>1</numero>
+	<dataviagem>27/04/2016</dataviagem>
+	<rota>
+		<descricao>1 - PF/POA</descricao>
+		<viagem> 
+			<cidades>
+				<cidade>
+					<nome>Passo Fundo</nome>
+					<estado>RS</estado>
+				</cidade>		
+				<cidade>
+					<nome>Soledade</nome>
+					<estado>RS</estado>
+				</cidade>					
+				<cidade>
+					<nome>Lajeado</nome>
+					<estado>RS</estado>
+				</cidade>				
+				<cidade>
+					<nome>Porto Alegre</nome>
+					<estado>RS</estado>
+				</cidade>
+			</cidades>		
+		</viagem>
+	</rota>
+	<coletas>
+		<coleta>
+			<id>100</id>
+			<cliente>
+				<nome> Cliente A </nome>
+				<cnpj>888888888888888888</cnpj>
+				<endereco> 
+					<logradouro> Rua Harmonia </logradouro>
+					<numero>111 </numero>
+					<complemento></complemento>
+					<bairro> Indsutrial </bairro>
+					<cidade> Passo Fundo </cidade>
+					<uf> RS </uf>
+					<setor> Ala de Tecidos </setor>
+				</endereco>
+			</cliente>
+			<horafixa>09:30</horafixa>
+			<horalimite> </horalimite>
+			<qtdnfes> </qtdnfes>
+			<totalnfes> </totalnfes>
+			<qtdvol> </qtdvol>
+			<cargatotal> </cargatotal>
+			<cubagem> </cubagem>
+		</coleta>
+
+		<coleta>
+			<id>101</id>
+			<cliente>
+				<nome> Cliente x </nome>
+				<cnpj>111111111111111111</cnpj>
+				<endereco> 
+					<logradouro> Rua dos Andradas </logradouro>
+					<numero>111 </numero>
+					<complemento></complemento>
+					<bairro> Indsutrial </bairro>
+					<cidade> Passo Fundo </cidade>
+					<uf> RS </uf>
+					<setor> Ala de Tecidos </setor>
+				</endereco>
+			</cliente>
+			<horafixa>09:30</horafixa>
+			<horalimite> </horalimite>
+			<qtdnfe> </qtdnfe>
+			<totalnfes> </totalnfes>
+			<qtdvol> </qtdvol>
+			<cargatotal> </cargatotal>
+			<cubagem> </cubagem>
+		</coleta>			
+	</coletas>
+</envioManifesto>

@@ -1,0 +1,251 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.ManifestDetailsFragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearCount"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="80dp">
+
+            <TextView
+                android:id="@+id/textCountColetados"
+                android:alpha="0.8"
+                android:textColor="@color/accentdark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1"/>
+
+            <TextView
+                android:alpha="0.8"
+                android:textColor="@color/accentdark"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="COLETADOS" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="80dp">
+
+            <TextView
+                android:id="@+id/textCountRestantes"
+                android:textColor="@color/yellowborderbg"
+                android:textStyle="bold"
+                android:alpha="0.8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="14"/>
+
+            <TextView
+                android:alpha="0.8"
+                android:textColor="@color/yellowborderbg"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="AGUARDANDO" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="80dp">
+
+            <TextView
+                android:id="@+id/textCountCancelados"
+                android:alpha="0.8"
+                android:textColor="@color/purpleborderbg"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="3"/>
+
+            <TextView
+                android:alpha="0.8"
+                android:textColor="@color/purpleborderbg"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="CANCELADOS" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearTipo"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="100dp"
+                android:text="Tipo:"
+                android:gravity="center_vertical|right"
+                android:id="@+id/textTipo"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Coleta"
+                android:id="@+id/textTipoResult" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:gravity="end"
+                android:text="10/01/2016"
+                android:id="@+id/textDataResult" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/linearTipo"
+            android:id="@+id/linearSituacao"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="100dp"
+                android:text="Situação:"
+                android:gravity="center_vertical|right"
+                android:id="@+id/textSituacao"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/yellowborderbg"
+                android:paddingLeft="10dp"
+                android:text="Inicio de viagem"
+                android:id="@+id/textSituacaoResult" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/linearSituacao"
+            android:id="@+id/linearOrigem"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="100dp"
+                android:text="Origem:"
+                android:gravity="center_vertical|right"
+                android:id="@+id/textOrigem"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Cidade de Origem"
+                android:id="@+id/textCidadeOrigem" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/linearOrigem"
+            android:id="@+id/linearDestino"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="100dp"
+                android:text="Destino:"
+                android:gravity="center_vertical|right"
+                android:id="@+id/textDestino"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Cidade de Destino"
+                android:id="@+id/textCidadeDestino" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--RelativeLayout
+        android:layout_below="@+id/manifestDetails"
+        android:orientation="vertical"
+        android:id="@+id/linearCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_height="40dp"
+            android:layout_width="100dp"
+            android:text="Cidades:"
+            android:gravity="center_vertical|right"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:layout_marginLeft="100dp"
+            android:id="@+id/listaCidadesColeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp">
+        </ListView>
+    </RelativeLayout-->
+
+    <!--RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapaLine"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/listaCidadesColeta" />
+
+    </RelativeLayout-->
+
+</LinearLayout>

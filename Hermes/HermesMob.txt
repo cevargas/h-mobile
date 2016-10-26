@@ -1,0 +1,3 @@
+
+	- Falta salvar as coletas concluidas no servidor
+	- Ver o botao sincroniza...

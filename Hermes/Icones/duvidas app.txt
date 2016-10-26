@@ -1,0 +1,21 @@
+
+
+
+	- Baixei o Manifesto hoje..foi finalizado no WS pelo operador, mas esta armazenado no banco do android..Quando consultar de novo e tiver um novo manifesto..é para excluir antigo?
+	- No DB do hermes nao tem flag que diga que um determinado manifesto ja foi baixado pelo motorista? Precisa ter ou tem algum log que registrar isso separado? Hoje, a consulta verifica se esse manifesto retornado ja esta no aplicativo para nao inserir denovo.
+	- Coletas..quando o motorista cancelar ou finalizar..esse processo vai executar no WS?..ou só um operador do sistema pode confirmar essas ações?
+	- Quando for enviar uma lista de coletas encerradas pelo aplicativo..precisa identificar se todas foram integradas com sucesso..ou devolver uma lista de integradas ou com falhas..hoje, se ocorrer algum erro em uma coletas de 15, nenhuma delas vai ser salvar.
+	- Coleta precisa de foto?	
+	- Pode ocorrer de um operador cancelar uma coleta em viagem? e se o motorista ja fez essa coleta?	
+	- Opções de cancelamento e finalizacao de coletas serão padrão para todos que usarem o APP? Validação de campos chave e volumes, tem que ser obrigatorio informar descricao do cancelamento?
+	- Pode fazer coleta com NF e nao NFe?	
+	- Pode ocorrer de ter alteracao de status de coletas pelo operador quando o manifesto estiver em viagem?
+	
+	
+	
+	***
+	- Sincronizar.. Precisa ser refeito..pois terá mais de um processo para executar, para endereços de consulta diferentes
+	
+	
+	
+	

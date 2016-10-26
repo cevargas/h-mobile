@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--color name="primary">#5cae54</color>
+  <color name="primary_dark">#ff42959a</color>
+  <color name="primary_darker">#ff23729a</color>
+  <color name="accent">#c8f9ba</color-->
+
+  <color name="primary">#ff34495b</color>
+  <color name="primary_dark">#ff1e6c90</color>
+  <color name="primary_darker">#ff2684af</color>
+  <color name="alternative">#ff3ebcd4</color>
+  <color name="accent">#ff3ebcd4</color>
+  <color name="accentdark">#ff3ebcd4</color>
+  <color name="accentover">#ff00a0ff</color>
+
+  <color name="red">#fc3e4a</color>
+  <color name="greenbg">#ffdef8c8</color>
+  <color name="greenborderbg">#ff9bbd5f</color>
+  <color name="graybg">#ffe6e6e6</color>
+  <color name="grayborderbg">#ffcccccc</color>
+  <color name="yellowbg">#fff1ffbf</color>
+  <color name="yellowborderbg">#e6c200</color>
+  <color name="purplebg">#ffe5cbff</color>
+  <color name="purpleborderbg">#ffb469ff</color>
+  <color name="bluebg">#ffbee3ff</color>
+  <color name="blueborderbg">#ff70a9ff</color>
+
+  <color name="black">#000000</color>
+  <color name="jet">#222222</color>
+  <color name="oil">#333333</color>
+  <color name="monsoon">#777777</color>
+  <color name="jumbo">#888888</color>
+  <color name="aluminum">#999999</color>
+  <color name="bluegray">#e8edff</color>
+  <color name="base">#AAAAAA</color>
+  <color name="iron">#CCCCCC</color>
+  <color name="gray">#E4E4E4</color>
+  <color name="clean">#F5F5F5</color>
+  <color name="white">#FFFFFF</color>
+</resources>

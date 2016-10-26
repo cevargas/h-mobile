@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ColetasActivity">
+
+    <item android:id="@+id/action_btn_finalizar"
+        android:title="Concluir"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_btn_cancelar"
+        android:title="Cancelar"
+        android:orderInCategory="101"
+        app:showAsAction="never" />
+
+</menu>
+
+
+
+

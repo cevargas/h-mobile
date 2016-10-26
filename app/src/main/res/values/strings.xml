@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="google_app_id">AIzaSyA-UsKcbpk9pCQeqChqCM2oYJnWBFfB-MY</string>
+
+    <string name="app_name">TN3 Hermes</string>
+    <string name="action_sincronizar">Sincronizar</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_logout">Sair</string>
+
+    <string name="logo">TN3 Hermes</string>
+
+    <!-- VERIFICACAO -->
+    <string name="verif_btn_verificacao">Autenticar</string>
+    <string name="verif_inputtxt_code">Token de Autenticação</string>
+    <string name="verif_text_imei">IMEI</string>
+
+    <!-- MANIFESTOS -->
+    <string name="manif_lista_id">Manifesto ID</string>
+    <string name="manif_lista_data">Manifesto Data</string>
+    <string name="manif_lista_status">Manifesto Status</string>
+    <string name="manif_lista_rota">Manifesto Rota</string>
+
+    <!-- COLETAS -->
+    <string name="action_btn_finaliza">Finalizar</string>
+    <string name="no_data_available">Nenhuma informação disponível</string>
+    <string name="opt_tp_canc">Tipo de Cancelamento</string>
+
+    <!-- se for add itens a mais tem que add no java tambem...CancelaColetaAdapter e CancelarColetaActivity -->
+    <string-array name="list_opts_canc_array">
+        <item>Coleta cancelada em viagem</item>
+        <item>Coleta não realizada</item>
+        <item>Sem coleta</item>
+    </string-array>
+</resources>

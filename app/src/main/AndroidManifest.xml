@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tn3.mobile.hermes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CONNECTIVITY_CHANGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <!--uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@style/HermesTheme" >
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".VerificacaoActivity" />
+        <activity android:name=".ManifestoActivity" />
+        <activity android:name=".ColetasActivity" />
+        <activity android:name=".FinalizaColetaActivity" />
+        <activity android:name=".CancelarColetaActivity" android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <service android:name=".services.PostColetasConcluidasService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false" />
+        <service android:name=".services.ConsultaManifestoService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false"/>
+
+        <receiver android:name=".broadcast.ConnectionBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA-UsKcbpk9pCQeqChqCM2oYJnWBFfB-MY"/>
+
+    </application>
+</manifest>

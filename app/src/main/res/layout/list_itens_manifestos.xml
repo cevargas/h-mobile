@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/border_set"
+    android:id="@+id/lnRelativeLine">
+
+    <LinearLayout
+        android:id="@+id/lnLayt"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="80dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:id="@+id/lnLaytPeriodo"
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="80dp">
+
+            <TextView
+                android:id="@+id/diaManifesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="25"/>
+
+            <TextView
+                android:id="@+id/mesManifesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="ABR" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/manif_lista_rota"
+            android:textStyle="bold"
+            android:id="@+id/textRota" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_height="40dp"
+            android:layout_width="100dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/primary_darker"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/manif_lista_status"
+            android:id="@+id/textStatus" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/iron"/>
+
+</RelativeLayout>

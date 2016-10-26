@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ManifestoActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/border_bottom_gray">
+
+    <LinearLayout
+        android:id="@+id/lnLaytDetalhesListaColeta"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="match_parent">
+
+                <!--com.tn3.mobile.hermes.utils.TextAwesome
+                    android:id="@+id/iconClock"
+                    android:textColor="@color/primary_darker"
+                    android:textStyle="normal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fa_check_circle"
+                    android:textSize="24sp"/-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="99h99"
+                    android:textSize="28sp"
+                    android:id="@+id/textItensColetaHora"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Nome do Cliente"
+            android:id="@+id/textItensColetaCliente" />
+
+    </LinearLayout>
+
+    <com.tn3.mobile.hermes.utils.TextAwesome
+        android:layout_alignParentRight="true"
+        android:id="@+id/iconSincronizado"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/base"
+        android:textStyle="normal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="@string/fa_cloud_upload"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
