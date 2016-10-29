@@ -65,8 +65,8 @@ public class ConsultaManifestoTask extends AsyncTask<String, Void, ResultWSDTO> 
             Log.i(TAG, "Retorno da consulta Manifesto..");
 
             if (result.stat.equals("error")) {
-                Log.w(TAG, result.msg);
-                Log.e(TAG, result.cause);
+                Log.w(TAG, (result.msg != null) ? result.msg : "result.msg nao retornou mensagem.");
+                Log.w(TAG, (result.cause != null) ? result.cause : "result.cause nao retornou mensagem.");
             }
             else {
 
